@@ -168,6 +168,9 @@ li > button:hover {
   border-left: 10px  solid gold;
   background-color: white;
   max-height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
@@ -185,9 +188,14 @@ li > button:hover {
   color: #444444;
 }
 
+.cardBottom {
+
+}
+
 .btnContainer {
   display: flex;
   justify-content: flex-end;
+  justify-self: flex-end;
 }
 
 .btnContainer > button {
@@ -215,7 +223,13 @@ li > button:hover {
 
 .containerSide > .card {
   background-color: white;
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.containerSide p {
+  margin: 0;
 }
 
 .containerSide > .card + .card {
