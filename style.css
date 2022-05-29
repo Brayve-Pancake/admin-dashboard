@@ -1,0 +1,24 @@
+body {
+ display: grid;
+ grid-template-columns: 1fr 3fr 1fr;
+ grid-template-rows: 1fr 2fr 2fr;
+}
+
+.dashboard {
+  grid-row: 1/ -1;
+}
+
+.header {
+  grid-column: 2/ -1;
+}
+
+.projects {
+  grid-row: 2/ -1;
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.projects .card {
+}
